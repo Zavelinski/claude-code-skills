@@ -1,0 +1,22 @@
+name: validate-marketplace
+on:
+  push:
+    paths:
+      - '.claude-plugin/marketplace.json'
+      - '.github/workflows/validate-marketplace.yml'
+      - '.github/scripts/validate-marketplace.js'
+  pull_request:
+    paths:
+      - '.claude-plugin/marketplace.json'
+      - '.github/workflows/validate-marketplace.yml'
+      - '.github/scripts/validate-marketplace.js'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node .github/scripts/validate-marketplace.js

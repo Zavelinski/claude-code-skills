@@ -20,6 +20,24 @@ Then install any skill:
 
 Update later with `/plugin marketplace update claude-code-skills`.
 
+> **Security note.** The `/plugin` flow is the trusted path: it registers any hooks through the Claude Code consent UI. The per-skill `install.sh` scripts in each repo are a manual fallback that mutates `~/.claude/settings.json` directly and is blocked by auto-mode. Review and run them yourself only if you cannot use `/plugin`. See each skill's README.
+
+### Pinned versions
+
+Every plugin is pinned to a release tag for reproducible installs. Updates land only when a new tag is published and this marketplace pin is bumped, then you run `/plugin marketplace update claude-code-skills`.
+
+| Skill | Version | Tag |
+|-------|---------|-----|
+| godmode | 1.1.1 | v1.1.1 |
+| adversarial-verify | 1.0.1 | v1.0.1 |
+| skill-security-scan | 1.0.1 | v1.0.1 |
+| scheduled-sop-runner | 1.0.1 | v1.0.1 |
+| docs-drift-sync | 1.0.1 | v1.0.1 |
+| geo-aeo-audit | 1.0.1 | v1.0.1 |
+| content-repurpose-engine | 1.0.1 | v1.0.1 |
+| weekly-ai-digest | 1.0.1 | v1.0.1 |
+| salve | 1.0.1 | v1.0.1 |
+
 ## The skills
 
 | Skill | What it does | Repo |
@@ -36,7 +54,7 @@ Update later with `/plugin marketplace update claude-code-skills`.
 
 ## Without the marketplace
 
-Every skill is also a standalone repo with `install.sh` / `install.ps1`. Clone the one you want and run its installer; see each repo's README.
+Every skill is also a standalone repo with `install.sh` / `install.ps1`. Clone the one you want and run its installer; see each repo's README. Note: the manual installer mutates `~/.claude/settings.json` and is blocked by Claude Code auto-mode, so prefer the `/plugin` flow above.
 
 ## License
 
