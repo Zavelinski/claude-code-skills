@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zavelinski.github.io/claude-code-skills/sitemap.xml
