@@ -143,6 +143,21 @@
       "author": {
         "name": "Zavelinski"
       }
+    },
+    {
+      "name": "safety-net",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-safety-net",
+        "ref": "v1.0.0"
+      },
+      "description": "Automatic reversible git checkpoints around Claude's edits: snapshots the working tree before every edit so you can say 'undo' and roll back.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
     }
   ]
 }
