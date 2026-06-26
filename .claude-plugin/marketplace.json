@@ -1,0 +1,130 @@
+{
+  "name": "claude-code-skills",
+  "owner": {
+    "name": "Zavelinski",
+    "url": "https://github.com/Zavelinski"
+  },
+  "metadata": {
+    "description": "A suite of focused, original Claude Code skills.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "godmode",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-godmode"
+      },
+      "description": "One-word max-capability mode: maps and uses the best available tool, stays exhaustive, verifies before claiming done, persists context.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "adversarial-verify",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-adversarial-verify"
+      },
+      "description": "Proves a code change works by trying to break it: writes and runs falsification tests, returns a binary PASS/FAIL/INCONCLUSIVE verdict.",
+      "category": "Testing",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "skill-security-scan",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-skill-security-scan"
+      },
+      "description": "Statically vets a third-party SKILL.md, its hooks, and the settings.json it would register before install, returning an ALLOW/REVIEW/BLOCK verdict.",
+      "category": "Security",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "scheduled-sop-runner",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-scheduled-sop-runner"
+      },
+      "description": "Turns a repeatable SOP into a self-checking scheduled routine that verifies each run and notifies you only when something fails.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "docs-drift-sync",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-docs-drift-sync"
+      },
+      "description": "Keeps docs in sync with changed code: maps changed symbols/flags/endpoints to their doc mentions, detects drift, proposes minimal edits.",
+      "category": "Documentation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "geo-aeo-audit",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-geo-aeo-audit"
+      },
+      "description": "Audits a page for citability by AI answer engines and outputs paste-ready structure (definition block, JSON-LD, FAQ). Scoped to AEO.",
+      "category": "SEO & AEO",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "content-repurpose-engine",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-content-repurpose-engine"
+      },
+      "description": "Turns one source asset into 8-10 platform-native posts (LinkedIn, X, Instagram, short-form, newsletter), source-faithful.",
+      "category": "Content",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "weekly-ai-digest",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-weekly-ai-digest"
+      },
+      "description": "Produces a sourced, skimmable weekly AI roundup from the last 7 days across multiple sources, ranked by signal, every claim linked.",
+      "category": "Research & Writing",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "salve",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-salve"
+      },
+      "description": "Ship and persist your work in one word: persist context, commit, push, PR+merge to main, deploy, ff-update local, report evidence.",
+      "category": "DevOps",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    }
+  ]
+}
