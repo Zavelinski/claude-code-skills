@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>claude code docs-drift-sync skill: keep docs in sync with changed code</title>
+<meta name="description" content="docs-drift-sync is a Claude Code skill that maps changed code to its doc mentions, detects drift, and proposes the minimal edits to fix it. Scoped to drift, not doc generation.">
+<link rel="canonical" href="https://zavelinski.github.io/claude-code-skills/docs-drift-sync.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="claude code docs-drift-sync skill: keep docs in sync with changed code">
+<meta property="og:description" content="docs-drift-sync is a Claude Code skill that maps changed code to its doc mentions, detects drift, and proposes the minimal edits to fix it. Scoped to drift, not doc generation.">
+<meta property="og:url" content="https://zavelinski.github.io/claude-code-skills/docs-drift-sync.html">
+<meta property="og:image" content="https://raw.githubusercontent.com/Zavelinski/claude-code-docs-drift-sync/main/.github/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Zavelinski/claude-code-docs-drift-sync/main/.github/social-preview.png">
+<style>
+  body{max-width:820px;margin:2rem auto;padding:0 1rem;font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a1a}
+  h1{font-size:1.9rem;line-height:1.2}h2{margin-top:2.2rem;font-size:1.3rem}
+  .lead{font-size:1.1rem;background:#f5f3ff;border-left:4px solid #8A2BE2;padding:.8rem 1rem;border-radius:4px}
+  code{background:#f0f0f3;padding:.1rem .35rem;border-radius:3px;font-size:.9em}
+  pre{background:#0d1117;color:#e6edf3;padding:1rem;border-radius:6px;overflow:auto}
+  ul{line-height:1.7}.faq dt{font-weight:600;margin-top:1rem}.faq dd{margin:.3rem 0 0}
+  a{color:#6d28d9}.meta{color:#666;font-size:.85rem}.links a{margin-right:.8rem}
+</style>
+</head>
+<body>
+
+<h1>docs-drift-sync for Claude Code</h1>
+
+<p class="lead"><strong>docs-drift-sync is a <a href="https://claude.com/claude-code">Claude Code</a> skill that keeps docs in sync with the code that changed.</strong> When you change code, docs silently go stale: a renamed parameter, a removed flag, a changed signature, an example whose output no longer matches. This maps the changed surface in a diff to where the docs mention it, detects drift, and proposes the minimal edits.</p>
+
+<h2>What it does</h2>
+<p>It is scoped to drift, not doc generation. It does not write new docs from scratch. It finds where the docs reference what you just changed, shows what is now wrong, and proposes the smallest edit that fixes it.</p>
+
+<h2>Install</h2>
+<p><strong>Option 1, Claude Code plugin marketplace (recommended):</strong></p>
+<pre><code>/plugin marketplace add Zavelinski/claude-code-skills
+/plugin install docs-drift-sync@claude-code-skills</code></pre>
+<p><strong>Option 2, manual fallback:</strong> clone the <a href="https://github.com/Zavelinski/claude-code-docs-drift-sync">source repo</a> and run its installer. The marketplace path registers any hooks through the Claude Code consent UI; the manual installer edits <code>~/.claude/settings.json</code> directly and is blocked by auto-mode. Prefer Option 1.</p>
+
+<h2>How do I use it?</h2>
+<ul>
+<li>After a code change with a diff, run <code>/docs-drift-sync</code>.</li><li>Review the drift map and the proposed minimal edits.</li><li>Apply or reject each edit.</li>
+</ul>
+
+<h2 id="faq">Frequently asked questions</h2>
+<dl class="faq">
+  <dt>Does docs-drift-sync generate new documentation?</dt>
+  <dd>No. It is scoped to drift. It maps what you changed to where the docs mention it, finds what is now wrong, and proposes minimal edits. It does not write docs from scratch.</dd>
+  <dt>What counts as drift?</dt>
+  <dd>Any doc mention that no longer matches the code: a renamed symbol, a removed flag, a changed signature, an example whose output no longer matches, a referenced file that moved.</dd>
+  <dt>How does it find the doc mentions?</dt>
+  <dd>It takes the changed surface from your diff, symbols, flags, and endpoints, and searches the docs for references to each, then checks whether the reference still matches the current code.</dd>
+</dl>
+
+<h2>Links</h2>
+<p class="links">
+<a href="https://github.com/Zavelinski/claude-code-docs-drift-sync">Source repo</a>
+<a href="https://zavelinski.github.io/claude-code-skills/">claude-code-skills marketplace</a>
+<a href="https://zavelinski.github.io/claude-code-skills/index.html">All 9 skills</a>
+</p>
+<p class="meta">See also: <a href="scheduled-sop-runner.html">scheduled-sop-runner</a>, <a href="geo-aeo-audit.html">geo-aeo-audit</a>. Maintained by <a href="https://github.com/Zavelinski">Zavelinski</a>. MIT licensed. 2026.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "docs-drift-sync",
+      "description": "docs-drift-sync is a Claude Code skill that maps changed code to its doc mentions, detects drift, and proposes the minimal edits to fix it. Scoped to drift, not doc generation.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Claude Code",
+      "url": "https://github.com/Zavelinski/claude-code-docs-drift-sync",
+      "codeRepository": "https://github.com/Zavelinski/claude-code-docs-drift-sync",
+      "author": {
+        "@type": "Person",
+        "name": "Zavelinski",
+        "url": "https://github.com/Zavelinski"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "url": "https://zavelinski.github.io/claude-code-skills/",
+        "name": "claude-code-skills"
+      },
+      "keywords": "claude code, documentation, drift, code docs, sync"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does docs-drift-sync generate new documentation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is scoped to drift. It maps what you changed to where the docs mention it, finds what is now wrong, and proposes minimal edits. It does not write docs from scratch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What counts as drift?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any doc mention that no longer matches the code: a renamed symbol, a removed flag, a changed signature, an example whose output no longer matches, a referenced file that moved."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does it find the doc mentions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It takes the changed surface from your diff, symbols, flags, and endpoints, and searches the docs for references to each, then checks whether the reference still matches the current code."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>

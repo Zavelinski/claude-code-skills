@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>claude code adversarial-verify skill: prove a code change works by trying to break it</title>
+<meta name="description" content="adversarial-verify is a Claude Code skill that proves a change works by writing and running falsification tests, then returns a binary PASS/FAIL/INCONCLUSIVE verdict backed by executed output.">
+<link rel="canonical" href="https://zavelinski.github.io/claude-code-skills/adversarial-verify.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="claude code adversarial-verify skill: prove a code change works by trying to break it">
+<meta property="og:description" content="adversarial-verify is a Claude Code skill that proves a change works by writing and running falsification tests, then returns a binary PASS/FAIL/INCONCLUSIVE verdict backed by executed output.">
+<meta property="og:url" content="https://zavelinski.github.io/claude-code-skills/adversarial-verify.html">
+<meta property="og:image" content="https://raw.githubusercontent.com/Zavelinski/claude-code-adversarial-verify/main/.github/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Zavelinski/claude-code-adversarial-verify/main/.github/social-preview.png">
+<style>
+  body{max-width:820px;margin:2rem auto;padding:0 1rem;font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a1a}
+  h1{font-size:1.9rem;line-height:1.2}h2{margin-top:2.2rem;font-size:1.3rem}
+  .lead{font-size:1.1rem;background:#f5f3ff;border-left:4px solid #8A2BE2;padding:.8rem 1rem;border-radius:4px}
+  code{background:#f0f0f3;padding:.1rem .35rem;border-radius:3px;font-size:.9em}
+  pre{background:#0d1117;color:#e6edf3;padding:1rem;border-radius:6px;overflow:auto}
+  ul{line-height:1.7}.faq dt{font-weight:600;margin-top:1rem}.faq dd{margin:.3rem 0 0}
+  a{color:#6d28d9}.meta{color:#666;font-size:.85rem}.links a{margin-right:.8rem}
+</style>
+</head>
+<body>
+
+<h1>adversarial-verify for Claude Code</h1>
+
+<p class="lead"><strong>adversarial-verify is a <a href="https://claude.com/claude-code">Claude Code</a> skill that proves a code change works by trying to break it.</strong> Given a change, it re-derives what the change is supposed to do, writes targeted tests that try to <em>falsify</em> that claim, runs them, and returns a binary <strong>PASS / FAIL / INCONCLUSIVE</strong> verdict backed by real executed output, never prose alone.</p>
+
+<h2>What it does</h2>
+<p>It differs from a prose code review. Instead of saying "looks correct", it produces a test that would have failed before the change and passes after, plus edge cases that attack the new behavior, and shows you the run output. No run, no verdict: it never claims PASS from reading alone.</p>
+
+<h2>Install</h2>
+<p><strong>Option 1, Claude Code plugin marketplace (recommended):</strong></p>
+<pre><code>/plugin marketplace add Zavelinski/claude-code-skills
+/plugin install adversarial-verify@claude-code-skills</code></pre>
+<p><strong>Option 2, manual fallback:</strong> clone the <a href="https://github.com/Zavelinski/claude-code-adversarial-verify">source repo</a> and run its installer. The marketplace path registers any hooks through the Claude Code consent UI; the manual installer edits <code>~/.claude/settings.json</code> directly and is blocked by auto-mode. Prefer Option 1.</p>
+
+<h2>How do I use it?</h2>
+<ul>
+<li>After a fix or feature: run <code>/adversarial-verify</code>.</li><li>It writes falsification tests in your existing test framework and runs them.</li><li>You get a binary verdict with the executed output and an explicit not-covered list.</li>
+</ul>
+
+<h2 id="faq">Frequently asked questions</h2>
+<dl class="faq">
+  <dt>How is adversarial-verify different from a code review?</dt>
+  <dd>A code review emits prose opinions. adversarial-verify is falsification-first and execution-backed: it writes tests that try to break the change, runs them, and returns PASS/FAIL/INCONCLUSIVE with the output that proves the verdict. No run means no verdict.</dd>
+  <dt>What does PASS require?</dt>
+  <dd>PASS needs both: every falsification test passes, and at least one test actually exercises the change (it would have failed on the pre-change code). A green suite that never touches the change is not a pass.</dd>
+  <dt>Does it modify my source code to make tests pass?</dt>
+  <dd>No. Tests adapt to the code, never the reverse. If the code is wrong, the verdict is FAIL.</dd>
+</dl>
+
+<h2>Links</h2>
+<p class="links">
+<a href="https://github.com/Zavelinski/claude-code-adversarial-verify">Source repo</a>
+<a href="https://zavelinski.github.io/claude-code-skills/">claude-code-skills marketplace</a>
+<a href="https://zavelinski.github.io/claude-code-skills/index.html">All 9 skills</a>
+</p>
+<p class="meta">See also: <a href="godmode.html">godmode</a>, <a href="skill-security-scan.html">skill-security-scan</a>. Maintained by <a href="https://github.com/Zavelinski">Zavelinski</a>. MIT licensed. 2026.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "adversarial-verify",
+      "description": "adversarial-verify is a Claude Code skill that proves a change works by writing and running falsification tests, then returns a binary PASS/FAIL/INCONCLUSIVE verdict backed by executed output.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Claude Code",
+      "url": "https://github.com/Zavelinski/claude-code-adversarial-verify",
+      "codeRepository": "https://github.com/Zavelinski/claude-code-adversarial-verify",
+      "author": {
+        "@type": "Person",
+        "name": "Zavelinski",
+        "url": "https://github.com/Zavelinski"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "url": "https://zavelinski.github.io/claude-code-skills/",
+        "name": "claude-code-skills"
+      },
+      "keywords": "claude code, verification, falsification, testing, code review"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is adversarial-verify different from a code review?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A code review emits prose opinions. adversarial-verify is falsification-first and execution-backed: it writes tests that try to break the change, runs them, and returns PASS/FAIL/INCONCLUSIVE with the output that proves the verdict. No run means no verdict."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does PASS require?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PASS needs both: every falsification test passes, and at least one test actually exercises the change (it would have failed on the pre-change code). A green suite that never touches the change is not a pass."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it modify my source code to make tests pass?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Tests adapt to the code, never the reverse. If the code is wrong, the verdict is FAIL."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
