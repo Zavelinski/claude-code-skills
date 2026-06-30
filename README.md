@@ -2,9 +2,9 @@
 
 [![Awesome](https://img.shields.io/badge/Claude%20Code-marketplace-8A2BE2)](https://code.claude.com/docs/en/plugin-marketplaces)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Plugins](https://img.shields.io/badge/plugins-14-blue)](#the-skills)
+[![Plugins](https://img.shields.io/badge/plugins-20-blue)](#the-skills)
 
-A suite of focused, original [Claude Code](https://claude.com/claude-code) skills, distributed as a one-line plugin marketplace. Each skill does one thing well, is MIT licensed, and ships with cross-platform installers.
+A suite of focused, original [Claude Code](https://claude.com/claude-code) skills, plugins, and MCP servers, distributed as a one-line plugin marketplace. Each does one thing well, is MIT licensed, and ships with cross-platform installers. Topics: `claude-code`, `claude-code-skill`, `claude-code-plugin`, `mcp`, `anthropic`.
 
 ## Install the whole collection
 
@@ -42,6 +42,12 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | model-router | 0.1.0 | v0.1.0 |
 | context-warden | 0.1.0 | v0.1.0 |
 | sync | 1.0.0 | v1.0.0 |
+| mcp-warden | 0.1.0 | v0.1.0 |
+| orchestrate | 0.1.0 | v0.1.0 |
+| recall | 0.1.0 | v0.1.0 |
+| run-cost | 0.1.0 | v0.1.0 |
+| multi-repo-context | 0.1.0 | v0.1.0 |
+| headless-mcp-bridge | 0.1.0 | v0.1.0 |
 
 ## The skills
 
@@ -61,6 +67,12 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | **model-router** | Cost-aware model routing: cheap subtasks to Sonnet/Haiku, Opus reserved for design, hard debugging, and verification. | [model-router](https://github.com/Zavelinski/model-router) |
 | **context-warden** | Runtime context-rot defense: observation masking, ACE-style compaction playbook, lean session overlay. | [context-warden](https://github.com/Zavelinski/context-warden) |
 | **sync** | Check installed skills against the latest published GitHub version, report drift, and sync the outdated public ones. | [claude-code-sync](https://github.com/Zavelinski/claude-code-sync) |
+| **mcp-warden** | Vet an MCP server before enabling it: security & compatibility sheet, static scan, ALLOW/REVIEW/BLOCK. The MCP sibling of skill-security-scan. | [mcp-warden](https://github.com/Zavelinski/mcp-warden) |
+| **orchestrate** | Plan -> spec -> build -> verify with a hard approval gate and a verify check on every step. Ships a runnable Workflow template. | [orchestrate](https://github.com/Zavelinski/orchestrate) |
+| **recall** | Zero-dependency MCP server for cross-session memory recall: lexical search/list/get over your memory files. | [recall](https://github.com/Zavelinski/recall) |
+| **run-cost** | Pre-flight token/cost estimate for a whole task or workflow before you run it, with a cheaper-shape proposal. | [run-cost](https://github.com/Zavelinski/run-cost) |
+| **multi-repo-context** | Declare a set of repos in scope and how they relate; a scope manifest so the agent edits the right repo. Pairs with recall. | [multi-repo-context](https://github.com/Zavelinski/multi-repo-context) |
+| **headless-mcp-bridge** | Make scheduled/cron/headless runs reach your MCP servers: user-scope register, pre-approve, verify. | [headless-mcp-bridge](https://github.com/Zavelinski/headless-mcp-bridge) |
 
 ## Without the marketplace
 
