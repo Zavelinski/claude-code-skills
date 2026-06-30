@@ -2,7 +2,7 @@
 
 [![Awesome](https://img.shields.io/badge/Claude%20Code-marketplace-8A2BE2)](https://code.claude.com/docs/en/plugin-marketplaces)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Plugins](https://img.shields.io/badge/plugins-29-blue)](#the-skills)
+[![Plugins](https://img.shields.io/badge/plugins-32-blue)](#the-skills)
 
 A suite of focused, original [Claude Code](https://claude.com/claude-code) skills, plugins, and MCP servers, distributed as a one-line plugin marketplace. Each does one thing well, is MIT licensed, and ships with cross-platform installers. Topics: `claude-code`, `claude-code-skill`, `claude-code-plugin`, `mcp`, `anthropic`.
 
@@ -57,6 +57,9 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | chain-of-verification | 0.1.0 | v0.1.0 |
 | least-to-most | 0.1.0 | v0.1.0 |
 | multi-agent-debate | 0.1.0 | v0.1.0 |
+| secret-scan | 0.1.0 | v0.1.0 |
+| structured-output | 0.1.0 | v0.1.0 |
+| prompt-compression | 0.1.0 | v0.1.0 |
 
 ## The skills
 
@@ -91,6 +94,9 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | **chain-of-verification** | Draft, generate independent verification questions about its claims, answer them, revise: a self-verification loop (CoVe) vs hallucination. | [chain-of-verification](https://github.com/Zavelinski/chain-of-verification) |
 | **least-to-most** | Decompose a complex problem into ordered subproblems and solve in sequence, feeding each answer to the next, instead of one-shotting. | [least-to-most](https://github.com/Zavelinski/least-to-most) |
 | **multi-agent-debate** | Several agents propose then critique each other across rounds until they converge: debate for high-stakes answers, beyond a blind vote. | [multi-agent-debate](https://github.com/Zavelinski/multi-agent-debate) |
+| **secret-scan** | Scan a diff/blob for leaked secrets (keys, tokens, private keys, connection strings) before commit/push/share, and block them. | [secret-scan](https://github.com/Zavelinski/secret-scan) |
+| **structured-output** | Define a schema first and make machine-consumed output conform to it (tool args, payloads, extraction, handoffs), instead of regexing prose. | [structured-output](https://github.com/Zavelinski/structured-output) |
+| **prompt-compression** | Compress a large blob (log, transcript, doc) to its salient parts before feeding it into context, instead of pasting it whole. | [prompt-compression](https://github.com/Zavelinski/prompt-compression) |
 
 ## Without the marketplace
 

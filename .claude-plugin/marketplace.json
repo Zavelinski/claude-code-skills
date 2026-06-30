@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "A suite of focused, original Claude Code skills.",
-    "version": "1.6.0"
+    "version": "1.7.0"
   },
   "plugins": [
     {
@@ -438,6 +438,51 @@
         "ref": "v0.1.0"
       },
       "description": "Several agents propose then critique each other across rounds until they converge, instead of one model or a blind vote: debate for high-stakes answers.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "secret-scan",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/secret-scan",
+        "ref": "v0.1.0"
+      },
+      "description": "Scan a diff or blob for leaked secrets (API keys, tokens, private keys, connection strings) before commit/push/share, and block them, instead of leaking and rotating later.",
+      "category": "Security",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "structured-output",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/structured-output",
+        "ref": "v0.1.0"
+      },
+      "description": "Define a schema first and make machine-consumed output conform to it (tool args, payloads, extraction, agent handoffs), instead of free text you then regex.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "prompt-compression",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/prompt-compression",
+        "ref": "v0.1.0"
+      },
+      "description": "Compress a large blob (log, transcript, doc, dump) to its salient parts before feeding it into context, instead of pasting it whole.",
       "category": "Workflow & Automation",
       "license": "MIT",
       "author": {
