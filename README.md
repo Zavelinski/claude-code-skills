@@ -2,7 +2,7 @@
 
 [![Awesome](https://img.shields.io/badge/Claude%20Code-marketplace-8A2BE2)](https://code.claude.com/docs/en/plugin-marketplaces)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Plugins](https://img.shields.io/badge/plugins-26-blue)](#the-skills)
+[![Plugins](https://img.shields.io/badge/plugins-29-blue)](#the-skills)
 
 A suite of focused, original [Claude Code](https://claude.com/claude-code) skills, plugins, and MCP servers, distributed as a one-line plugin marketplace. Each does one thing well, is MIT licensed, and ships with cross-platform installers. Topics: `claude-code`, `claude-code-skill`, `claude-code-plugin`, `mcp`, `anthropic`.
 
@@ -54,6 +54,9 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | reflexion | 0.1.0 | v0.1.0 |
 | retrieval-router | 0.1.0 | v0.1.0 |
 | cite-guard | 0.1.0 | v0.1.0 |
+| chain-of-verification | 0.1.0 | v0.1.0 |
+| least-to-most | 0.1.0 | v0.1.0 |
+| multi-agent-debate | 0.1.0 | v0.1.0 |
 
 ## The skills
 
@@ -85,6 +88,9 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | **reflexion** | After a failure, write why it failed + what to change, then retry with that lesson. Verbal self-reflection as memory (Reflexion). | [reflexion](https://github.com/Zavelinski/reflexion) |
 | **retrieval-router** | Decide per task: retrieve targeted slices vs load broad context (RAG vs long-context, Self-Route), instead of dumping the codebase. | [retrieval-router](https://github.com/Zavelinski/retrieval-router) |
 | **cite-guard** | Attach a source before asserting a fact, mark unverifiable claims, refuse ungrounded ones: a grounding gate against hallucination. | [cite-guard](https://github.com/Zavelinski/cite-guard) |
+| **chain-of-verification** | Draft, generate independent verification questions about its claims, answer them, revise: a self-verification loop (CoVe) vs hallucination. | [chain-of-verification](https://github.com/Zavelinski/chain-of-verification) |
+| **least-to-most** | Decompose a complex problem into ordered subproblems and solve in sequence, feeding each answer to the next, instead of one-shotting. | [least-to-most](https://github.com/Zavelinski/least-to-most) |
+| **multi-agent-debate** | Several agents propose then critique each other across rounds until they converge: debate for high-stakes answers, beyond a blind vote. | [multi-agent-debate](https://github.com/Zavelinski/multi-agent-debate) |
 
 ## Without the marketplace
 

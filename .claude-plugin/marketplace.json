@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "A suite of focused, original Claude Code skills.",
-    "version": "1.5.0"
+    "version": "1.6.0"
   },
   "plugins": [
     {
@@ -394,6 +394,51 @@
       },
       "description": "Attach a source before asserting a factual claim, mark unverifiable ones, and refuse ungrounded facts: a grounding gate against hallucination.",
       "category": "Research & Writing",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "chain-of-verification",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/chain-of-verification",
+        "ref": "v0.1.0"
+      },
+      "description": "Draft an answer, generate independent verification questions about its claims, answer them, and revise: a self-verification loop (CoVe) that reduces hallucination.",
+      "category": "Research & Writing",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "least-to-most",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/least-to-most",
+        "ref": "v0.1.0"
+      },
+      "description": "Decompose a complex problem into ordered subproblems and solve them in sequence, feeding each answer into the next (least-to-most), instead of one-shotting the whole thing.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "multi-agent-debate",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/multi-agent-debate",
+        "ref": "v0.1.0"
+      },
+      "description": "Several agents propose then critique each other across rounds until they converge, instead of one model or a blind vote: debate for high-stakes answers.",
+      "category": "Workflow & Automation",
       "license": "MIT",
       "author": {
         "name": "Zavelinski"
