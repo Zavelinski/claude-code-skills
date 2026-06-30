@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "A suite of focused, original Claude Code skills.",
-    "version": "1.4.0"
+    "version": "1.5.0"
   },
   "plugins": [
     {
@@ -349,6 +349,51 @@
       },
       "description": "Validate tool-call arguments before executing and verify tool output before acting on it: cuts the tool-misuse failures that dominate agent breakage (~31%).",
       "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "reflexion",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/reflexion",
+        "ref": "v0.1.0"
+      },
+      "description": "After a failed attempt, write a short reflection on why it failed and what to change, then retry with that lesson in context (Reflexion). Verbal self-reflection as memory between attempts.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "retrieval-router",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/retrieval-router",
+        "ref": "v0.1.0"
+      },
+      "description": "Decide per task whether to retrieve targeted slices or load broad context (RAG vs long-context, Self-Route), instead of dumping the whole codebase.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "cite-guard",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/cite-guard",
+        "ref": "v0.1.0"
+      },
+      "description": "Attach a source before asserting a factual claim, mark unverifiable ones, and refuse ungrounded facts: a grounding gate against hallucination.",
+      "category": "Research & Writing",
       "license": "MIT",
       "author": {
         "name": "Zavelinski"

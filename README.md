@@ -2,7 +2,7 @@
 
 [![Awesome](https://img.shields.io/badge/Claude%20Code-marketplace-8A2BE2)](https://code.claude.com/docs/en/plugin-marketplaces)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Plugins](https://img.shields.io/badge/plugins-23-blue)](#the-skills)
+[![Plugins](https://img.shields.io/badge/plugins-26-blue)](#the-skills)
 
 A suite of focused, original [Claude Code](https://claude.com/claude-code) skills, plugins, and MCP servers, distributed as a one-line plugin marketplace. Each does one thing well, is MIT licensed, and ships with cross-platform installers. Topics: `claude-code`, `claude-code-skill`, `claude-code-plugin`, `mcp`, `anthropic`.
 
@@ -51,6 +51,9 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | self-consistency | 0.1.0 | v0.1.0 |
 | dep-guard | 0.1.0 | v0.1.0 |
 | tool-guard | 0.1.0 | v0.1.0 |
+| reflexion | 0.1.0 | v0.1.0 |
+| retrieval-router | 0.1.0 | v0.1.0 |
+| cite-guard | 0.1.0 | v0.1.0 |
 
 ## The skills
 
@@ -79,6 +82,9 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | **self-consistency** | Sample several independent solutions to a hard problem and take the consistent answer. Test-time compute where being wrong is expensive (+17.9pp GSM8K). | [self-consistency](https://github.com/Zavelinski/self-consistency) |
 | **dep-guard** | Verify a package/import actually exists before adding it: catches hallucinated deps and typosquats (slopsquatting). | [dep-guard](https://github.com/Zavelinski/dep-guard) |
 | **tool-guard** | Validate tool-call args before executing and verify output before acting: cuts tool-misuse failures (~31% of agent breakage). | [tool-guard](https://github.com/Zavelinski/tool-guard) |
+| **reflexion** | After a failure, write why it failed + what to change, then retry with that lesson. Verbal self-reflection as memory (Reflexion). | [reflexion](https://github.com/Zavelinski/reflexion) |
+| **retrieval-router** | Decide per task: retrieve targeted slices vs load broad context (RAG vs long-context, Self-Route), instead of dumping the codebase. | [retrieval-router](https://github.com/Zavelinski/retrieval-router) |
+| **cite-guard** | Attach a source before asserting a fact, mark unverifiable claims, refuse ungrounded ones: a grounding gate against hallucination. | [cite-guard](https://github.com/Zavelinski/cite-guard) |
 
 ## Without the marketplace
 
