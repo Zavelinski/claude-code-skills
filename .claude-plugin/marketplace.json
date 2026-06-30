@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "A suite of focused, original Claude Code skills.",
-    "version": "1.7.0"
+    "version": "1.8.0"
   },
   "plugins": [
     {
@@ -483,6 +483,51 @@
         "ref": "v0.1.0"
       },
       "description": "Compress a large blob (log, transcript, doc, dump) to its salient parts before feeding it into context, instead of pasting it whole.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "contract-test",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/contract-test",
+        "ref": "v0.1.0"
+      },
+      "description": "Pin the contract two components share and test BOTH sides against it (consumer-driven contract testing), instead of only unit-testing each in isolation.",
+      "category": "Testing",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "rubric-judge",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/rubric-judge",
+        "ref": "v0.1.0"
+      },
+      "description": "Evaluate or compare outputs against an explicit rubric, scoring each criterion with evidence (LLM-as-judge), instead of a vibe looks-good.",
+      "category": "Testing",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "few-shot-curator",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/few-shot-curator",
+        "ref": "v0.1.0"
+      },
+      "description": "Steer a drifting task with 2-5 carefully chosen examples (relevant, diverse, correct) instead of more instructions: curated in-context learning.",
       "category": "Workflow & Automation",
       "license": "MIT",
       "author": {

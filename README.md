@@ -2,7 +2,7 @@
 
 [![Awesome](https://img.shields.io/badge/Claude%20Code-marketplace-8A2BE2)](https://code.claude.com/docs/en/plugin-marketplaces)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Plugins](https://img.shields.io/badge/plugins-32-blue)](#the-skills)
+[![Plugins](https://img.shields.io/badge/plugins-35-blue)](#the-skills)
 
 A suite of focused, original [Claude Code](https://claude.com/claude-code) skills, plugins, and MCP servers, distributed as a one-line plugin marketplace. Each does one thing well, is MIT licensed, and ships with cross-platform installers. Topics: `claude-code`, `claude-code-skill`, `claude-code-plugin`, `mcp`, `anthropic`.
 
@@ -60,6 +60,9 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | secret-scan | 0.1.0 | v0.1.0 |
 | structured-output | 0.1.0 | v0.1.0 |
 | prompt-compression | 0.1.0 | v0.1.0 |
+| contract-test | 0.1.0 | v0.1.0 |
+| rubric-judge | 0.1.0 | v0.1.0 |
+| few-shot-curator | 0.1.0 | v0.1.0 |
 
 ## The skills
 
@@ -97,6 +100,9 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | **secret-scan** | Scan a diff/blob for leaked secrets (keys, tokens, private keys, connection strings) before commit/push/share, and block them. | [secret-scan](https://github.com/Zavelinski/secret-scan) |
 | **structured-output** | Define a schema first and make machine-consumed output conform to it (tool args, payloads, extraction, handoffs), instead of regexing prose. | [structured-output](https://github.com/Zavelinski/structured-output) |
 | **prompt-compression** | Compress a large blob (log, transcript, doc) to its salient parts before feeding it into context, instead of pasting it whole. | [prompt-compression](https://github.com/Zavelinski/prompt-compression) |
+| **contract-test** | Pin the contract two components share and test BOTH sides against it (consumer-driven), instead of only unit-testing each in isolation. | [contract-test](https://github.com/Zavelinski/contract-test) |
+| **rubric-judge** | Evaluate/compare outputs against an explicit rubric, scoring each criterion with evidence (LLM-as-judge), instead of a vibe call. | [rubric-judge](https://github.com/Zavelinski/rubric-judge) |
+| **few-shot-curator** | Steer a drifting task with 2-5 curated examples (relevant, diverse, correct) instead of more instructions: in-context learning done right. | [few-shot-curator](https://github.com/Zavelinski/few-shot-curator) |
 
 ## Without the marketplace
 
