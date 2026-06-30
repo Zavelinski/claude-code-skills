@@ -41,13 +41,13 @@
     },
     {
       "name": "skill-security-scan",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "source": {
         "source": "github",
         "repo": "Zavelinski/claude-code-skill-security-scan",
-        "ref": "v1.0.1"
+        "ref": "v1.1.0"
       },
-      "description": "Statically vets a third-party SKILL.md, its hooks, and the settings.json it would register before install, returning an ALLOW/REVIEW/BLOCK verdict.",
+      "description": "Statically vets a third-party SKILL.md, its hooks, and the settings.json it would register before install, returning an ALLOW/REVIEW/BLOCK verdict. Ships an install-guard hook that auto-runs the scan whenever you go to install a skill or plugin.",
       "category": "Security",
       "license": "MIT",
       "author": {
