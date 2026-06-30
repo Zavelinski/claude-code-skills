@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "A suite of focused, original Claude Code skills.",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -153,6 +153,66 @@
         "ref": "v1.0.0"
       },
       "description": "Automatic reversible git checkpoints around Claude's edits: snapshots the working tree before every edit so you can say 'undo' and roll back.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "testsmith",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/testsmith",
+        "ref": "v0.1.0"
+      },
+      "description": "Adversarial test generation: reproduce the bug with a failing test first, then a test-vs-mutant loop yields FEW high-value tests tied to the change, not many shallow ones.",
+      "category": "Testing",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "model-router",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/model-router",
+        "ref": "v0.1.0"
+      },
+      "description": "Cost-aware model routing: send cheap subtasks to Sonnet/Haiku and reserve Opus for design, hard debugging, and verification, to cut token cost.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "context-warden",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/context-warden",
+        "ref": "v0.1.0"
+      },
+      "description": "Runtime context-rot defense: observation masking, an ACE-style compaction playbook, and a lean session overlay that keeps the working set small.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "sync",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/claude-code-sync",
+        "ref": "v1.0.0"
+      },
+      "description": "Check installed Claude Code skills against the latest published GitHub version and report drift; with your OK, sync the outdated public ones.",
       "category": "Workflow & Automation",
       "license": "MIT",
       "author": {

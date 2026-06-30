@@ -2,7 +2,7 @@
 
 [![Awesome](https://img.shields.io/badge/Claude%20Code-marketplace-8A2BE2)](https://code.claude.com/docs/en/plugin-marketplaces)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Plugins](https://img.shields.io/badge/plugins-9-blue)](#the-skills)
+[![Plugins](https://img.shields.io/badge/plugins-14-blue)](#the-skills)
 
 A suite of focused, original [Claude Code](https://claude.com/claude-code) skills, distributed as a one-line plugin marketplace. Each skill does one thing well, is MIT licensed, and ships with cross-platform installers.
 
@@ -37,6 +37,11 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | content-repurpose-engine | 1.0.1 | v1.0.1 |
 | weekly-ai-digest | 1.0.1 | v1.0.1 |
 | salve | 1.0.1 | v1.0.1 |
+| safety-net | 1.0.0 | v1.0.0 |
+| testsmith | 0.1.0 | v0.1.0 |
+| model-router | 0.1.0 | v0.1.0 |
+| context-warden | 0.1.0 | v0.1.0 |
+| sync | 1.0.0 | v1.0.0 |
 
 ## The skills
 
@@ -51,6 +56,11 @@ Every plugin is pinned to a release tag for reproducible installs. Updates land 
 | **content-repurpose-engine** | One source asset into 8-10 platform-native posts, source-faithful. | [claude-code-content-repurpose-engine](https://github.com/Zavelinski/claude-code-content-repurpose-engine) |
 | **weekly-ai-digest** | Sourced, skimmable weekly AI roundup; every claim linked. | [claude-code-weekly-ai-digest](https://github.com/Zavelinski/claude-code-weekly-ai-digest) |
 | **salve** | Ship and persist your work in one word: commit, push, PR+merge, deploy, report. | [claude-code-salve](https://github.com/Zavelinski/claude-code-salve) |
+| **safety-net** | Automatic reversible git checkpoints around Claude's edits: snapshots before each edit so you can say 'undo' and roll back. | [claude-code-safety-net](https://github.com/Zavelinski/claude-code-safety-net) |
+| **testsmith** | Adversarial test generation: failing test first, then a test-vs-mutant loop yields FEW high-value tests, not many shallow ones. | [testsmith](https://github.com/Zavelinski/testsmith) |
+| **model-router** | Cost-aware model routing: cheap subtasks to Sonnet/Haiku, Opus reserved for design, hard debugging, and verification. | [model-router](https://github.com/Zavelinski/model-router) |
+| **context-warden** | Runtime context-rot defense: observation masking, ACE-style compaction playbook, lean session overlay. | [context-warden](https://github.com/Zavelinski/context-warden) |
+| **sync** | Check installed skills against the latest published GitHub version, report drift, and sync the outdated public ones. | [claude-code-sync](https://github.com/Zavelinski/claude-code-sync) |
 
 ## Without the marketplace
 
