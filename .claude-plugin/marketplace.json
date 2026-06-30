@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "A suite of focused, original Claude Code skills.",
-    "version": "1.3.0"
+    "version": "1.4.0"
   },
   "plugins": [
     {
@@ -303,6 +303,51 @@
         "ref": "v0.1.0"
       },
       "description": "Make scheduled, cron, and headless runs reach your MCP servers: register at user scope, pre-approve tools, and verify with claude mcp list. A config playbook.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "self-consistency",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/self-consistency",
+        "ref": "v0.1.0"
+      },
+      "description": "Sample several independent solutions to a hard problem and take the consistent answer (self-consistency): test-time compute spent where being wrong is expensive. +17.9pp on GSM8K.",
+      "category": "Workflow & Automation",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "dep-guard",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/dep-guard",
+        "ref": "v0.1.0"
+      },
+      "description": "Verify a package/module/API actually exists before adding it: catches hallucinated dependencies and typosquats (slopsquatting) before they reach the lockfile.",
+      "category": "Security",
+      "license": "MIT",
+      "author": {
+        "name": "Zavelinski"
+      }
+    },
+    {
+      "name": "tool-guard",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "Zavelinski/tool-guard",
+        "ref": "v0.1.0"
+      },
+      "description": "Validate tool-call arguments before executing and verify tool output before acting on it: cuts the tool-misuse failures that dominate agent breakage (~31%).",
       "category": "Workflow & Automation",
       "license": "MIT",
       "author": {
